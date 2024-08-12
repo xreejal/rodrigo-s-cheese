@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Inika:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="logo" height="100px"> </a>
+        <div id="nav">
+            <a href="positions.html">Apply</a>
+            <a href="about.html">About</a>
+            <a href="reservation.html">Reserve</a>
+        </div>
+    </header>
+
+    <h1>Shopping Cart</h1>
+    <div id="shoppingCart">
+        <div class="shoppingItem">
+            <img src="img/cheese/3.png" alt="cheese">
+            <h2>Cool Cheese</h2>
+            <button>-</button>
+            <p style="width: 20px; text-align: center;">1</p>
+            <button>+</button>
+            <p style="width: 100px; text-align: center;">$1.00</p>
+
+        </div>
+        <div class="shoppingItem">
+            <img src="img/cheese/1.webp" alt="cheese">
+            <h2>Awesome Cheese</h2>
+            <button>-</button>
+            <p style="width: 20px; text-align: center;">1</p>
+            <button>+</button>
+            <p style="width: 100px; text-align: center;">$1.00</p>
+        </div>
+        <div class="shoppingItem">
+            <img src="img/cheese/2.jpg" alt="cheese">
+            <h2>Wow Cheese</h2>
+            <button>-</button>
+            <p style="width: 20px; text-align: center;">1</p>
+            <button>+</button>
+            <p style="width: 100px; text-align: center;">$1.00</p>
+        </div>
+        <h2 id="total" style="    color: #E0E0E0;">Total: $3.00</h1>
+    </div>
+
+    <main>
+        <div class="form-box">
+            <div class="form-area">
+                <h2>Payment Information</h2>
+                <form action="" method="post">
+                    <div class="form-item">
+                        <p>
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" placeholder="First & Last Name">
+                        </p>
+                    </div>
+                    <div class="form-item">
+                        <p>
+                            <label for="paypal">PayPal Account Name</label>
+                            <input type="paypal" id="paypal" placeholder="username">
+                        </p>
+                    </div>
+                    <div class="form-item">
+                        <p>
+                            <label for="number">Phone Number</label>
+                            <input type="text" id="number" placeholder="123-456-7890">
+                        </p>
+                    </div>
+
+                    <div class="submit-button">
+                        <a href="index.html">Submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/checkout.js"></script>
+
+    <footer>
+        <p>&copy; Rodrigo's Cheese</p>
+        <a href="#">Resources</a>
+        <a href="#">Language</a>
+        <a href="#">Blog</a>
+        <a href="#">Follow Us</a>
+    </footer>
+</body>
+
+</html>
